@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chun's Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Chun's Clinic</h1>
+            <p>Digital Health Solutions</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="sitemap.html">Site Map & Credits</a>
+        </nav>
+        <a href="contact.html" class="btn">Book Appointment</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Book an Appointment</h2>
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: var(--box-shadow);">
+            <form onsubmit="return validateForm()">
+                <label for="name" style="color: var(--primary-dark);">Full Name:</label>
+                <input type="text" id="name" name="name" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px;">
+                
+                <label for="email" style="color: var(--primary-dark);">Email Address:</label>
+                <input type="email" id="email" name="email" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px;">
+                
+                <label for="phone" style="color: var(--primary-dark);">Phone Number:</label>
+                <input type="text" id="phone" name="phone" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px;">
+                
+                <label for="service" style="color: var(--primary-dark);">Service Needed:</label>
+                <select id="service" name="service" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px;">
+                    <option value="telemedicine">Telemedicine</option>
+                    <option value="monitoring">Remote Monitoring</option>
+                    <option value="analytics">Health Analytics</option>
+                </select>
+                
+                <label for="appointment" style="color: var(--primary-dark);">Preferred Appointment Time:</label>
+                <input type="datetime-local" id="appointment" name="appointment" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px;">
+                
+                <label for="symptoms" style="color: var(--primary-dark);">Symptoms / Comments:</label>
+                <textarea id="symptoms" name="symptoms" rows="5" style="border: 2px solid var(--secondary-color); padding: 10px; border-radius: 8px; width: 100%; box-sizing: border-box;"></textarea>
+                
+                <input type="submit" value="Submit Request" class="btn" style="width: 100%; margin-top: 20px; font-size: 1.1rem;">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chun's Digital Health Clinic. COMP213 Term Project.</p>
+        <p>647-916-0324 | Centennial College, Toronto</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
